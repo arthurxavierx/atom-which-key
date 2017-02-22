@@ -13,21 +13,45 @@
     "etch": "^0.8.0"
   },
   "configSchema": {
+    "isVisible": {
+      "type": "boolean",
+      "default": true,
+      "order": 1,
+      "description": "Show the key bindings guide at the bottom of the workspace"
+    },
+    "showPackageNamesInCommands": {
+      "type": "boolean",
+      "default": "true",
+      "order": 2
+    },
+    "useMetaForAlt": {
+      "type": "boolean",
+      "default": true,
+      "order": 3,
+      "description": "Show the `alt` key as `meta`"
+    },
     "failedTimeout": {
       "type": "number",
       "default": 1,
       "minimum": 0,
       "maximum": 10,
+      "order": 4,
+      "name": "Failed Timeout (in seconds)",
       "description": "How long the panel showing a failed keystroke will be shown"
     },
-    "isVisible": {
-      "type": "boolean",
-      "default": true,
-      "description": "Show the key bindings guide at the bottom of the workspace"
+    "partialMatchTimeout": {
+      "type": "number",
+      "default": 30,
+      "minimum": 0,
+      "maximum": 300,
+      "order": 5,
+      "name": "Partial Match Timeout (in seconds)",
+      "description": "How long the panel showing a partially matched keystroke will be shown"
     },
     "keystrokesFormat": {
       "type": "string",
       "default": "short",
+      "order": 6,
       "enum": [
         {
           "value": "long",
@@ -43,15 +67,6 @@
         }
       ],
       "description": "Format for the keystrokes regarding individual and modifier keys"
-    },
-    "showPackageNamesInCommands": {
-      "type": "boolean",
-      "default": "true"
-    },
-    "useMetaForAlt": {
-      "type": "boolean",
-      "default": true,
-      "description": "Show the `alt` key as `meta`"
     }
   }
 }
