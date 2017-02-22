@@ -44,6 +44,10 @@
       ],
       "description": "Format for the keystrokes regarding individual and modifier keys"
     },
+    "showPackageNamesInCommands": {
+      "type": "boolean",
+      "default": "true"
+    },
     "useMetaForAlt": {
       "type": "boolean",
       "default": true,
