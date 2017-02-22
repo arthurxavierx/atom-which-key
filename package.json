@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "description": "Display available keybindings in a panel",
   "keywords": [],
-  "repository": "https://github.com/atom/which-key",
+  "repository": "https://github.com/arthur-xavier/atom-which-key",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
