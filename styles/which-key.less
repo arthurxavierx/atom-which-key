@@ -1,0 +1,34 @@
+@import "ui-variables";
+
+@keys-color: lighten(@ui-site-color-4, 5%);
+@arrow-color: darken(@text-color-success, 5%);
+@group-color: @text-color-info;
+
+.which-key {
+  overflow: auto;
+  font-size: @font-size;
+
+  .which-key-bindings {
+    column-width: 200px;
+    column-gap: 0.5rem;
+
+    .which-key-binding {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      .which-key-keys { color: @keys-color; }
+      .which-key-arrow { color: @arrow-color; }
+      .which-key-group { color: @group-color; }
+    }
+  }
+
+  .which-key-keystrokes {
+    padding-top: 0;
+  }
+
+  .which-key-keys,
+  .which-key-group {
+    font-weight: bold;
+  }
+}
