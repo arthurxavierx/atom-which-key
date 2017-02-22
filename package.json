@@ -1,7 +1,7 @@
 {
   "name": "which-key",
   "main": "./lib/which-key",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Display available keybindings in a panel",
   "keywords": [],
   "repository": "https://github.com/atom/which-key",
