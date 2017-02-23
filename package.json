@@ -37,7 +37,7 @@
       "maximum": 10,
       "order": 4,
       "name": "Failed Timeout (in seconds)",
-      "description": "How long the panel showing a failed keystroke will be shown"
+      "description": "Controls for how long the panel showing a failed keystroke will be shown"
     },
     "partialMatchTimeout": {
       "type": "number",
@@ -46,12 +46,21 @@
       "maximum": 300,
       "order": 5,
       "name": "Partial Match Timeout (in seconds)",
-      "description": "How long the panel showing a partially matched keystroke will be shown"
+      "description": "Controls for how long the panel showing a partially matched keystroke will be shown"
+    },
+    "showBindingsDelay": {
+      "type": "number",
+      "default": 0.5,
+      "minimum": 0,
+      "maximum": 5,
+      "order": 6,
+      "name": "Show Bindings Delay (in seconds)",
+      "description": "How long it will take for the key bindings panel to show up after a partial keystroke"
     },
     "keystrokesFormat": {
       "type": "string",
       "default": "short",
-      "order": 6,
+      "order": 7,
       "enum": [
         {
           "value": "long",
