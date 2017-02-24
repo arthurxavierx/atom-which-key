@@ -1,7 +1,7 @@
 {
   "name": "which-key",
   "main": "./lib/which-key",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Display available keybindings in a panel",
   "keywords": [
     "which-key",
