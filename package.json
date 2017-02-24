@@ -3,7 +3,15 @@
   "main": "./lib/which-key",
   "version": "0.3.1",
   "description": "Display available keybindings in a panel",
-  "keywords": [],
+  "keywords": [
+    "which-key",
+    "keymaps",
+    "keys",
+    "key",
+    "commands",
+    "bindings",
+    "emacs"
+  ],
   "repository": "https://github.com/arthur-xavier/atom-which-key",
   "license": "MIT",
   "engines": {
